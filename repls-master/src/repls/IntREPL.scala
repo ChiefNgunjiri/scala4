@@ -93,16 +93,16 @@ class IntREPL extends REPLBase {
 
                 val rank = bodmas(inputArray(i))
 
-                 if (rank == 1 || rankStack.orderedList.isEmpty) rankStack = new rankStack(rankStack.getRankList(),rank, bracketLevel(rankStack.currentBL, rank)._1)
+                 if (rank == 0 || rankStack.orderedList.isEmpty) rankStack = new rankStack(rankStack.getRankList(),rank, bracketLevel(rankStack.currentBL, rank)._1)
 
-                else if (rank == 2){
-                    while(rankStack.getRankLast() != 1){
+                else if (rank == 1){
+                    while(rankStack.getRankLast() != 0){
                         println(println(rankStack.getRankLast()))
-                        rankStack = new rankStack(rankStack.getRankList().dropRight(1),bracketLevel(rankStack.currentBL, rank)._1)
                         postFixString = new PostFix(postFixString.orderedList,rankStack.getRankLast().toString)
+                        rankStack = new rankStack(rankStack.getRankList().dropRight(1),bracketLevel(rankStack.currentBL, rank)._1)
                     }
                 }
-                else if(rank <= rankStack.getRankLast()) postFixString = new PostFix(postFixString.getPostFix(), inputArray(i))
+                else if(rank < rankStack.getRankLast()) postFixString = new PostFix(postFixString.getPostFix(), inputArray(i))
                 else {
                     //postFixString = new PostFix(postFixString.getPostFix(),bodmasList.ranking(rank - 1))
                     rankStack = new rankStack(rankStack.getRankList().dropRight(1),rank,rankStack.currentBL)
@@ -110,10 +110,10 @@ class IntREPL extends REPLBase {
             }
         }
 
-//        while (rankStack.getRankLast() != 10){
-//            postFixString =  new PostFix(postFixString.getPostFix(),bodmasList.ranking(rankStack.getRankLast()))
-//            rankStack = new rankStack(rankStack.getRankList().dropRight(1),bracketLevel(rankStack.currentBL, rankStack.getRankLast())._1)
-//        }
+        while (rankStack.getRankLast() != 10){
+            postFixString =  new PostFix(postFixString.getPostFix(),bodmasList.ranking(rankStack.getRankLast()))
+            rankStack = new rankStack(rankStack.getRankList().dropRight(1),bracketLevel(rankStack.currentBL, rankStack.getRankLast())._1)
+        }
         return postFixString.getPostFix().mkString(" ")
 
     }
@@ -125,13 +125,13 @@ class IntREPL extends REPLBase {
 
     def bodmas(rank: String): Int ={
           rank match {
-              case "(" => 1
-              case ")" => 2
-              case "^" => 3
-              case "/" => 4
-              case "*" => 5
-              case "+" => 6
-              case "-" => 7
+              case "(" => 0
+              case ")" => 1
+              case "^" => 2
+              case "/" => 3
+              case "*" => 4
+              case "+" => 5
+              case "-" => 6
               case _ => 0
           }
     }

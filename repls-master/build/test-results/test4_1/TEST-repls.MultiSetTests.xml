@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="repls.MultiSetTests" tests="22" skipped="0" failures="18" errors="0" timestamp="2020-10-12T10:18:28" hostname="hmakimei-Lenovo-ideapad-330S-14IKB" time="0.243">
+<testsuite name="repls.MultiSetTests" tests="22" skipped="0" failures="18" errors="0" timestamp="2020-10-13T12:09:05" hostname="hmakimei-Lenovo-ideapad-330S-14IKB" time="0.179">
   <properties/>
-  <testcase name="MultiSets can represent the empty Set" classname="repls.MultiSetTests" time="0.025"/>
-  <testcase name="Simple multiset character" classname="repls.MultiSetTests" time="0.016">
+  <testcase name="MultiSets can represent the empty Set" classname="repls.MultiSetTests" time="0.003"/>
+  <testcase name="Simple multiset character" classname="repls.MultiSetTests" time="0.022">
     <failure message="org.scalatest.exceptions.TestFailedException: Expected List('a'), but got List()" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Expected List('a'), but got List()
 	at org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:530)
 	at org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:529)
@@ -96,7 +96,7 @@
 	at java.lang.Thread.run(Thread.java:748)
 </failure>
   </testcase>
-  <testcase name="Simple multiset string" classname="repls.MultiSetTests" time="0.004">
+  <testcase name="Simple multiset string" classname="repls.MultiSetTests" time="0.002">
     <failure message="org.scalatest.exceptions.TestFailedException: Expected List(&quot;element&quot;), but got List()" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Expected List(&quot;element&quot;), but got List()
 	at org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:530)
 	at org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:529)
@@ -190,7 +190,7 @@
 	at java.lang.Thread.run(Thread.java:748)
 </failure>
   </testcase>
-  <testcase name="Simple multiset Int" classname="repls.MultiSetTests" time="0.012">
+  <testcase name="Simple multiset Int" classname="repls.MultiSetTests" time="0.03">
     <failure message="org.scalatest.exceptions.TestFailedException: Expected List(1), but got List()" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Expected List(1), but got List()
 	at org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:530)
 	at org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:529)
@@ -284,7 +284,7 @@
 	at java.lang.Thread.run(Thread.java:748)
 </failure>
   </testcase>
-  <testcase name="Simple multiset double" classname="repls.MultiSetTests" time="0.006">
+  <testcase name="Simple multiset double" classname="repls.MultiSetTests" time="0.011">
     <failure message="org.scalatest.exceptions.TestFailedException: Expected List(1.0), but got List()" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Expected List(1.0), but got List()
 	at org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:530)
 	at org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:529)
@@ -378,7 +378,7 @@
 	at java.lang.Thread.run(Thread.java:748)
 </failure>
   </testcase>
-  <testcase name="Multiple elements" classname="repls.MultiSetTests" time="0.008">
+  <testcase name="Multiple elements" classname="repls.MultiSetTests" time="0.013">
     <failure message="org.scalatest.exceptions.TestFailedException: Expected List('a', 'b', 'c'), but got List()" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Expected List('a', 'b', 'c'), but got List()
 	at org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:530)
 	at org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:529)
@@ -472,7 +472,7 @@
 	at java.lang.Thread.run(Thread.java:748)
 </failure>
   </testcase>
-  <testcase name="Same elements" classname="repls.MultiSetTests" time="0.001">
+  <testcase name="Same elements" classname="repls.MultiSetTests" time="0.002">
     <failure message="org.scalatest.exceptions.TestFailedException: Expected List('a', 'a', 'a'), but got List()" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Expected List('a', 'a', 'a'), but got List()
 	at org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:530)
 	at org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:529)
@@ -566,7 +566,7 @@
 	at java.lang.Thread.run(Thread.java:748)
 </failure>
   </testcase>
-  <testcase name="Different and same elements" classname="repls.MultiSetTests" time="0.011">
+  <testcase name="Different and same elements" classname="repls.MultiSetTests" time="0.005">
     <failure message="org.scalatest.exceptions.TestFailedException: Expected List(1, 1, 2, 2, 3), but got List()" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Expected List(1, 1, 2, 2, 3), but got List()
 	at org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:530)
 	at org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:529)
@@ -660,8 +660,8 @@
 	at java.lang.Thread.run(Thread.java:748)
 </failure>
   </testcase>
-  <testcase name="toString representation empty" classname="repls.MultiSetTests" time="0.043"/>
-  <testcase name="toString representation numbered" classname="repls.MultiSetTests" time="0.001">
+  <testcase name="toString representation empty" classname="repls.MultiSetTests" time="0.003"/>
+  <testcase name="toString representation numbered" classname="repls.MultiSetTests" time="0.003">
     <failure message="org.scalatest.exceptions.TestFailedException: Expected &quot;{[1,1,2]}&quot;, but got &quot;{[]}&quot;" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Expected &quot;{[1,1,2]}&quot;, but got &quot;{[]}&quot;
 	at org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:530)
 	at org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:529)
@@ -755,7 +755,7 @@
 	at java.lang.Thread.run(Thread.java:748)
 </failure>
   </testcase>
-  <testcase name="toString representation characters" classname="repls.MultiSetTests" time="0.005">
+  <testcase name="toString representation characters" classname="repls.MultiSetTests" time="0.002">
     <failure message="org.scalatest.exceptions.TestFailedException: Expected &quot;{[a,a,a,b,c]}&quot;, but got &quot;{[]}&quot;" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Expected &quot;{[a,a,a,b,c]}&quot;, but got &quot;{[]}&quot;
 	at org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:530)
 	at org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:529)
@@ -849,7 +849,7 @@
 	at java.lang.Thread.run(Thread.java:748)
 </failure>
   </testcase>
-  <testcase name="Sum of multiset with empty set" classname="repls.MultiSetTests" time="0.018">
+  <testcase name="Sum of multiset with empty set" classname="repls.MultiSetTests" time="0.001">
     <failure message="org.scalatest.exceptions.TestFailedException: Expected List('a'), but got List()" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Expected List('a'), but got List()
 	at org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:530)
 	at org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:529)
@@ -943,7 +943,7 @@
 	at java.lang.Thread.run(Thread.java:748)
 </failure>
   </testcase>
-  <testcase name="Sum of two multisets" classname="repls.MultiSetTests" time="0.004">
+  <testcase name="Sum of two multisets" classname="repls.MultiSetTests" time="0.008">
     <failure message="org.scalatest.exceptions.TestFailedException: Expected List(1.0, 1.0, 1.2, 1.2, 2.0, 2.2, 4.0), but got List()" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Expected List(1.0, 1.0, 1.2, 1.2, 2.0, 2.2, 4.0), but got List()
 	at org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:530)
 	at org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:529)
@@ -1037,7 +1037,7 @@
 	at java.lang.Thread.run(Thread.java:748)
 </failure>
   </testcase>
-  <testcase name="Sum of three multisets" classname="repls.MultiSetTests" time="0.005">
+  <testcase name="Sum of three multisets" classname="repls.MultiSetTests" time="0.01">
     <failure message="org.scalatest.exceptions.TestFailedException: Expected List(1, 2, 2, 3, 4, 5, 5), but got List()" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Expected List(1, 2, 2, 3, 4, 5, 5), but got List()
 	at org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:530)
 	at org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:529)
@@ -1132,7 +1132,7 @@
 </failure>
   </testcase>
   <testcase name="Difference of a multiset with empty set" classname="repls.MultiSetTests" time="0.007"/>
-  <testcase name="Difference of two multisets" classname="repls.MultiSetTests" time="0.02">
+  <testcase name="Difference of two multisets" classname="repls.MultiSetTests" time="0.007">
     <failure message="org.scalatest.exceptions.TestFailedException: Expected List(2.0), but got List()" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Expected List(2.0), but got List()
 	at org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:530)
 	at org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:529)
@@ -1226,7 +1226,7 @@
 	at java.lang.Thread.run(Thread.java:748)
 </failure>
   </testcase>
-  <testcase name="Difference of three multisets" classname="repls.MultiSetTests" time="0.001">
+  <testcase name="Difference of three multisets" classname="repls.MultiSetTests" time="0.005">
     <failure message="org.scalatest.exceptions.TestFailedException: Expected List(1), but got List()" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Expected List(1), but got List()
 	at org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:530)
 	at org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:529)
@@ -1320,8 +1320,8 @@
 	at java.lang.Thread.run(Thread.java:748)
 </failure>
   </testcase>
-  <testcase name="Intersection with empty set" classname="repls.MultiSetTests" time="0.002"/>
-  <testcase name="Intersection of two multisets" classname="repls.MultiSetTests" time="0.007">
+  <testcase name="Intersection with empty set" classname="repls.MultiSetTests" time="0.007"/>
+  <testcase name="Intersection of two multisets" classname="repls.MultiSetTests" time="0.002">
     <failure message="org.scalatest.exceptions.TestFailedException: Expected List(2, 3), but got List()" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Expected List(2, 3), but got List()
 	at org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:530)
 	at org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:529)
@@ -1415,7 +1415,7 @@
 	at java.lang.Thread.run(Thread.java:748)
 </failure>
   </testcase>
-  <testcase name="Intersection of tree multisets" classname="repls.MultiSetTests" time="0.016">
+  <testcase name="Intersection of tree multisets" classname="repls.MultiSetTests" time="0.008">
     <failure message="org.scalatest.exceptions.TestFailedException: Expected List(2), but got List()" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Expected List(2), but got List()
 	at org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:530)
 	at org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:529)
@@ -1509,7 +1509,7 @@
 	at java.lang.Thread.run(Thread.java:748)
 </failure>
   </testcase>
-  <testcase name="Multiset expressions numeric" classname="repls.MultiSetTests" time="0.015">
+  <testcase name="Multiset expressions numeric" classname="repls.MultiSetTests" time="0.008">
     <failure message="org.scalatest.exceptions.TestFailedException: Expected List(2, 3), but got List()" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Expected List(2, 3), but got List()
 	at org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:530)
 	at org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:529)
@@ -1603,7 +1603,7 @@
 	at java.lang.Thread.run(Thread.java:748)
 </failure>
   </testcase>
-  <testcase name="Multiset expression characters" classname="repls.MultiSetTests" time="0.004">
+  <testcase name="Multiset expression characters" classname="repls.MultiSetTests" time="0.006">
     <failure message="org.scalatest.exceptions.TestFailedException: Expected List('d', 'd', 'i', 'o'), but got List()" type="org.scalatest.exceptions.TestFailedException">org.scalatest.exceptions.TestFailedException: Expected List('d', 'd', 'i', 'o'), but got List()
 	at org.scalatest.Assertions.newAssertionFailedException(Assertions.scala:530)
 	at org.scalatest.Assertions.newAssertionFailedException$(Assertions.scala:529)
