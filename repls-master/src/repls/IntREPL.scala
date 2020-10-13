@@ -97,8 +97,7 @@ class IntREPL extends REPLBase {
 
                 if (rank == 0 || rankStack.orderedList.size == 0){ rankStack = new rankStack(rankStack.getRankList(), rank); println("adding" + rank);println(rankStack.orderedList); }
                 else if (rank == 1){
-                    println(rankStack.orderedList)
-                    println("running")
+
 
                     while(rankStack.getRankLast() != 0){
                         println(println(rankStack.getRankLast()))
@@ -122,7 +121,10 @@ class IntREPL extends REPLBase {
             rankStack = new rankStack(rankStack.getRankList().dropRight(1))
         }
         return postFixString.getPostFix().mkString(" ")
+    }
 
+    def polishCalc(): Unit ={
+        
     }
 
     def isDouble(num: String): Boolean ={
@@ -143,14 +145,6 @@ class IntREPL extends REPLBase {
         }
     }
 
-    def bracketLevel(level: Int, rank: Int): Tuple2[Int, Boolean] = {
-        if (rank == 0) return (level + 1, true)
-        else if (rank == 1) {
-            if (level > 0) return  (level - 1, true)
-            else return ((level- 1), false)
-        }
-        else return  (level,false )
-    }
 
     // TODO: Implement any further functions that are specifically for an IntREPL
 }
