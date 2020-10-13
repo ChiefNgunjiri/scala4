@@ -16,7 +16,6 @@ products:
    /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/infrastructure/ReportFraction.scala -> /home/hmakimei/Desktop/git/scala4/repls-master/build/classes/scala/test/repls/infrastructure/ReportFraction4_2$.class
    /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/infrastructure/ReportFraction.scala -> /home/hmakimei/Desktop/git/scala4/repls-master/build/classes/scala/test/repls/infrastructure/ReportFraction4_2.class
    /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/infrastructure/ScoreCounter.scala -> /home/hmakimei/Desktop/git/scala4/repls-master/build/classes/scala/test/repls/infrastructure/ScoreCounter.class
-   /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/infrastructure/StopRunningNow.java -> /home/hmakimei/Desktop/git/scala4/repls-master/build/classes/scala/test/repls/infrastructure/StopRunningNow.class
    /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/infrastructure/TestBase.scala -> /home/hmakimei/Desktop/git/scala4/repls-master/build/classes/scala/test/repls/infrastructure/ReallyStopSignaler$.class
    /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/infrastructure/TestBase.scala -> /home/hmakimei/Desktop/git/scala4/repls-master/build/classes/scala/test/repls/infrastructure/ReallyStopSignaler.class
    /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/infrastructure/TestBase.scala -> /home/hmakimei/Desktop/git/scala4/repls-master/build/classes/scala/test/repls/infrastructure/TestBase.class
@@ -24,6 +23,7 @@ binary dependencies:
    /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/AllTests.scala -> /home/hmakimei/.gradle/caches/modules-2/files-2.1/junit/junit/4.13/e49ccba652b735c93bd6e6f59760d8254cf597dd/junit-4.13.jar
    /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/AllTests.scala -> /home/hmakimei/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.13.3/1431ec9962701faf77bbd5e1449ded674be6fe5b/scala-library-2.13.3.jar
    /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/AllTests.scala -> /home/hmakimei/.gradle/caches/modules-2/files-2.1/org.scalatest/scalatest_2.13/3.0.8/640196fce185bddadf36d35200bca1b0a39015a8/scalatest_2.13-3.0.8.jar
+   /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/AllTests.scala -> /home/hmakimei/Desktop/git/scala4/repls-master/build/classes/scala/test/repls/infrastructure/ScoreCounter.class
    /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/AllTests.scala -> /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar
    /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/IntReplTests.scala -> /home/hmakimei/.gradle/caches/modules-2/files-2.1/junit/junit/4.13/e49ccba652b735c93bd6e6f59760d8254cf597dd/junit-4.13.jar
    /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/IntReplTests.scala -> /home/hmakimei/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.13.3/1431ec9962701faf77bbd5e1449ded674be6fe5b/scala-library-2.13.3.jar
@@ -45,6 +45,7 @@ binary dependencies:
    /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/MultiSetTests.scala -> /home/hmakimei/.gradle/caches/modules-2/files-2.1/org.scalatest/scalatest_2.13/3.0.8/640196fce185bddadf36d35200bca1b0a39015a8/scalatest_2.13-3.0.8.jar
    /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/MultiSetTests.scala -> /home/hmakimei/Desktop/git/scala4/repls-master/build/classes/scala/main/repls/MultiSet$.class
    /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/MultiSetTests.scala -> /home/hmakimei/Desktop/git/scala4/repls-master/build/classes/scala/main/repls/MultiSet.class
+   /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/MultiSetTests.scala -> /home/hmakimei/Desktop/git/scala4/repls-master/build/classes/scala/test/repls/infrastructure/TestBase.class
    /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/MultiSetTests.scala -> /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar
    /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/ReplsTestSuite4_1.scala -> /home/hmakimei/.gradle/caches/modules-2/files-2.1/junit/junit/4.13/e49ccba652b735c93bd6e6f59760d8254cf597dd/junit-4.13.jar
    /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/ReplsTestSuite4_1.scala -> /home/hmakimei/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.13.3/1431ec9962701faf77bbd5e1449ded674be6fe5b/scala-library-2.13.3.jar
@@ -54,12 +55,16 @@ binary dependencies:
    /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/ReplsTestSuite4_2.scala -> /home/hmakimei/.gradle/caches/modules-2/files-2.1/org.scalatest/scalatest_2.13/3.0.8/640196fce185bddadf36d35200bca1b0a39015a8/scalatest_2.13-3.0.8.jar
    /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/ReplsTestSuitesBase.scala -> /home/hmakimei/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.13.3/1431ec9962701faf77bbd5e1449ded674be6fe5b/scala-library-2.13.3.jar
    /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/ReplsTestSuitesBase.scala -> /home/hmakimei/.gradle/caches/modules-2/files-2.1/org.scalatest/scalatest_2.13/3.0.8/640196fce185bddadf36d35200bca1b0a39015a8/scalatest_2.13-3.0.8.jar
+   /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/ReplsTestSuitesBase.scala -> /home/hmakimei/Desktop/git/scala4/repls-master/build/classes/scala/test/repls/infrastructure/ScoreCounter.class
+   /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/ReplsTestSuitesBase.scala -> /home/hmakimei/Desktop/git/scala4/repls-master/build/classes/scala/test/repls/infrastructure/TestBase.class
    /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/infrastructure/ReportFraction.scala -> /home/hmakimei/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.13.3/1431ec9962701faf77bbd5e1449ded674be6fe5b/scala-library-2.13.3.jar
    /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/infrastructure/ReportFraction.scala -> /home/hmakimei/.gradle/caches/modules-2/files-2.1/org.scalatest/scalatest_2.13/3.0.8/640196fce185bddadf36d35200bca1b0a39015a8/scalatest_2.13-3.0.8.jar
+   /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/infrastructure/ReportFraction.scala -> /home/hmakimei/Desktop/git/scala4/repls-master/build/classes/scala/test/repls/ReplsTestSuite4_1.class
+   /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/infrastructure/ReportFraction.scala -> /home/hmakimei/Desktop/git/scala4/repls-master/build/classes/scala/test/repls/ReplsTestSuite4_2.class
+   /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/infrastructure/ReportFraction.scala -> /home/hmakimei/Desktop/git/scala4/repls-master/build/classes/scala/test/repls/ReplsTestSuitesBase.class
    /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/infrastructure/ReportFraction.scala -> /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar
    /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/infrastructure/ScoreCounter.scala -> /home/hmakimei/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.13.3/1431ec9962701faf77bbd5e1449ded674be6fe5b/scala-library-2.13.3.jar
    /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/infrastructure/ScoreCounter.scala -> /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar
-   /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/infrastructure/StopRunningNow.java -> /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar
    /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/infrastructure/TestBase.scala -> /home/hmakimei/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.13.3/1431ec9962701faf77bbd5e1449ded674be6fe5b/scala-library-2.13.3.jar
    /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/infrastructure/TestBase.scala -> /home/hmakimei/.gradle/caches/modules-2/files-2.1/org.scalactic/scalactic_2.13/3.0.8/117808606de90b0dbe758f007caaeb74dba93d1/scalactic_2.13-3.0.8.jar
    /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/infrastructure/TestBase.scala -> /home/hmakimei/.gradle/caches/modules-2/files-2.1/org.scalatest/scalatest_2.13/3.0.8/640196fce185bddadf36d35200bca1b0a39015a8/scalatest_2.13-3.0.8.jar
@@ -90,7 +95,6 @@ source dependencies:
    /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/infrastructure/ReportFraction.scala -> /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/ReplsTestSuite4_2.scala
    /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/infrastructure/ReportFraction.scala -> /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/ReplsTestSuitesBase.scala
    /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/infrastructure/ReportFraction.scala -> /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/infrastructure/ScoreCounter.scala
-   /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/infrastructure/StopRunningNow.java -> /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/infrastructure/StopRunningNow.java
    /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/infrastructure/TestBase.scala -> /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/infrastructure/ScoreCounter.scala
    /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/infrastructure/TestBase.scala -> /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/infrastructure/StopRunningNow.java
 external dependencies:
@@ -112,7 +116,6 @@ class names:
    /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/infrastructure/ReportFraction.scala -> repls.infrastructure.ReportFraction4_2
    /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/infrastructure/ReportFraction.scala -> repls.infrastructure.ReportFraction4_2$
    /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/infrastructure/ScoreCounter.scala -> repls.infrastructure.ScoreCounter
-   /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/infrastructure/StopRunningNow.java -> repls.infrastructure.StopRunningNow
    /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/infrastructure/TestBase.scala -> repls.infrastructure.ReallyStopSignaler
    /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/infrastructure/TestBase.scala -> repls.infrastructure.ReallyStopSignaler$
    /home/hmakimei/Desktop/git/scala4/repls-master/test/repls/infrastructure/TestBase.scala -> repls.infrastructure.TestBase
