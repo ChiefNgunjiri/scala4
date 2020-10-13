@@ -4,33 +4,32 @@ class Bodmas(){
     val ranking: Array[String] = Array[String]("","","^","/", "*", "+", "-")
 }
 
-class rankStack(rankList: List[Int], bracketLevel: Int) {
+class rankStack(rankList: List[Int]) {
 
     def this() {
-        this(rankStack.initList, 0)
+        this(List())
     }
 
-    def this(rankList: List[Int], nextOp: Int, bracketLevel: Int){
-        this(rankList :+ nextOp, bracketLevel)
+    def this(rankList: List[Int], nextOp: Int){
+        this(rankList :+ nextOp)
     }
 
     val orderedList: List[Int] =  rankList
-    val currentBL = bracketLevel
+
     //val bracketActive = inBracket
 
     def getRankLast(): Int = {
-        if(orderedList.size > 0) return orderedList(orderedList.size - 1)
-        else return 10
+        return orderedList(orderedList.size - 1)
+
     }
     def getRankList(): List[Int] = {
-        if (orderedList.size > 0) return orderedList
-        else return List(10)
+        return orderedList
     }
 
 }
 
 object rankStack{
-   val initList = List()
+    val initList = List()
 }
 
 class PostFix(preList: List[String]){
@@ -42,7 +41,7 @@ class PostFix(preList: List[String]){
     }
 
     def this(preList: List[String], element: String){
-       this(preList :+ element)
+        this(preList :+ element)
     }
 
     val orderedList: List[String] = preList
@@ -70,7 +69,7 @@ class IntREPL extends REPLBase {
             Map(("+", _ + _),
                 ("-", _ - _),
                 ("*", _ * _),
-                    ("/", _ / _))
+                ("/", _ / _))
         }
 
         println(elements.mkString(" "))
@@ -93,29 +92,30 @@ class IntREPL extends REPLBase {
 
                 val rank = bodmas(inputArray(i))
 
-                 if (rank == 0 || rankStack.orderedList.isEmpty) rankStack = new rankStack(rankStack.getRankList(),rank, bracketLevel(rankStack.currentBL, rank)._1)
-
+                if (rank == 0 || rankStack.orderedList.size == 0){ rankStack = new rankStack(rankStack.getRankList(), rank); println("adding" + rank);println(rankStack.orderedList); }
                 else if (rank == 1){
+                    println(rankStack.orderedList)
+                    println("running")
                     while(rankStack.getRankLast() != 0){
                         println(println(rankStack.getRankLast()))
-                        rankStack = new rankStack(rankStack.getRankList().dropRight(1),bracketLevel(rankStack.currentBL, rank)._1)
-                        postFixString = new PostFix(postFixString.orderedList,rankStack.getRankLast().toString)
+                        postFixString = new PostFix(postFixString.orderedList,bodmasList.ranking(rankStack.getRankLast()))
+                        rankStack = new rankStack(rankStack.getRankList().dropRight(1))
                     }
-                     rankStack = new rankStack(rankStack.getRankList().dropRight(1),bracketLevel(rankStack.currentBL, rank)._1)
+                    rankStack = new rankStack(rankStack.getRankList().dropRight(1))
                 }
-
-                else if(rank <= rankStack.getRankLast()) postFixString = new PostFix(postFixString.getPostFix(), inputArray(i))
+                else if(rank < rankStack.getRankLast()) postFixString = new PostFix(postFixString.getPostFix(), inputArray(i))
                 else {
-                    //postFixString = new PostFix(postFixString.getPostFix(),bodmasList.ranking(rank - 1))
-                    rankStack = new rankStack(rankStack.getRankList().dropRight(1),rank,rankStack.currentBL)
+
+                    rankStack = new rankStack(rankStack.getRankList(),rank)
                 }
+                println("ranklist is " + rankStack.orderedList)
             }
         }
 
-//        while (rankStack.getRankLast() != 10){
-//            postFixString =  new PostFix(postFixString.getPostFix(),bodmasList.ranking(rankStack.getRankLast()))
-//            rankStack = new rankStack(rankStack.getRankList().dropRight(1),bracketLevel(rankStack.currentBL, rankStack.getRankLast())._1)
-//        }
+        while (rankStack.orderedList.size != 0){
+            postFixString =  new PostFix(postFixString.getPostFix(),bodmasList.ranking(rankStack.getRankLast()))
+            rankStack = new rankStack(rankStack.getRankList().dropRight(1))
+        }
         return postFixString.getPostFix().mkString(" ")
 
     }
@@ -126,16 +126,16 @@ class IntREPL extends REPLBase {
     }
 
     def bodmas(rank: String): Int ={
-          rank match {
-              case "(" => 0
-              case ")" => 1
-              case "^" => 2
-              case "/" => 3
-              case "*" => 4
-              case "+" => 5
-              case "-" => 6
-              case _ => 0
-          }
+        rank match {
+            case "(" => 0
+            case ")" => 1
+            case "^" => 2
+            case "/" => 3
+            case "*" => 4
+            case "+" => 5
+            case "-" => 6
+            case _ => 0
+        }
     }
 
     def bracketLevel(level: Int, rank: Int): Tuple2[Int, Boolean] = {
