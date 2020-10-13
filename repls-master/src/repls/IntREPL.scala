@@ -105,7 +105,7 @@ class IntREPL extends REPLBase {
                 }
                 else if(rank < rankStack.getRankLast()) postFixString = new PostFix(postFixString.getPostFix(), inputArray(i))
                 else {
-                    
+
                     rankStack = new rankStack(rankStack.getRankList(),rank)
                 }
                 println("ranklist is " + rankStack.orderedList)
