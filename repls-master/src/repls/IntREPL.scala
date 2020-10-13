@@ -19,7 +19,9 @@ class rankStack(rankList: List[Int]) {
     //val bracketActive = inBracket
 
     def getRankLast(): Int = {
-         return orderedList(orderedList.size - 1)
+
+        return orderedList(orderedList.size - 1)
+
 
     }
     def getRankList(): List[Int] = {
@@ -29,7 +31,7 @@ class rankStack(rankList: List[Int]) {
 }
 
 object rankStack{
-   val initList = List()
+    val initList = List()
 }
 
 class PostFix(preList: List[String]){
@@ -41,7 +43,7 @@ class PostFix(preList: List[String]){
     }
 
     def this(preList: List[String], element: String){
-       this(preList :+ element)
+        this(preList :+ element)
     }
 
     val orderedList: List[String] = preList
@@ -69,7 +71,7 @@ class IntREPL extends REPLBase {
             Map(("+", _ + _),
                 ("-", _ - _),
                 ("*", _ * _),
-                    ("/", _ / _))
+                ("/", _ / _))
         }
 
         println(elements.mkString(" "))
@@ -92,16 +94,19 @@ class IntREPL extends REPLBase {
 
                 val rank = bodmas(inputArray(i))
 
-                 if (rank == 0 || rankStack.orderedList.size == 0){ rankStack = new rankStack(rankStack.getRankList(), rank); println("adding" + rank);println(rankStack.orderedList); }
+
+                if (rank == 0 || rankStack.orderedList.size == 0){ rankStack = new rankStack(rankStack.getRankList(), rank); println("adding" + rank);println(rankStack.orderedList); }
                 else if (rank == 1){
-                     println(rankStack.orderedList)
-                     println("running")
+                    println(rankStack.orderedList)
+                    println("running")
+
                     while(rankStack.getRankLast() != 0){
                         println(println(rankStack.getRankLast()))
                         postFixString = new PostFix(postFixString.orderedList,bodmasList.ranking(rankStack.getRankLast()))
                         rankStack = new rankStack(rankStack.getRankList().dropRight(1))
                     }
-                     rankStack = new rankStack(rankStack.getRankList().dropRight(1))
+                    rankStack = new rankStack(rankStack.getRankList().dropRight(1))
+
                 }
                 else if(rank < rankStack.getRankLast()) postFixString = new PostFix(postFixString.getPostFix(), inputArray(i))
                 else {
@@ -126,16 +131,16 @@ class IntREPL extends REPLBase {
     }
 
     def bodmas(rank: String): Int ={
-          rank match {
-              case "(" => 0
-              case ")" => 1
-              case "^" => 2
-              case "/" => 3
-              case "*" => 4
-              case "+" => 5
-              case "-" => 6
-              case _ => 0
-          }
+        rank match {
+            case "(" => 0
+            case ")" => 1
+            case "^" => 2
+            case "/" => 3
+            case "*" => 4
+            case "+" => 5
+            case "-" => 6
+            case _ => 0
+        }
     }
 
     def bracketLevel(level: Int, rank: Int): Tuple2[Int, Boolean] = {
