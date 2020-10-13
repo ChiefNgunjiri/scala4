@@ -101,8 +101,14 @@ class IntREPL extends REPLBase {
                         postFixString = new PostFix(postFixString.orderedList,rankStack.getRankLast().toString)
                         rankStack = new rankStack(rankStack.getRankList().dropRight(1),bracketLevel(rankStack.currentBL, rank)._1)
                     }
+                     rankStack = new rankStack(rankStack.getRankList().dropRight(1),bracketLevel(rankStack.currentBL, rank)._1)
                 }
+<<<<<<< HEAD
                 else if(rank < rankStack.getRankLast()) postFixString = new PostFix(postFixString.getPostFix(), inputArray(i))
+=======
+
+                else if(rank <= rankStack.getRankLast()) postFixString = new PostFix(postFixString.getPostFix(), inputArray(i))
+>>>>>>> linux
                 else {
                     //postFixString = new PostFix(postFixString.getPostFix(),bodmasList.ranking(rank - 1))
                     rankStack = new rankStack(rankStack.getRankList().dropRight(1),rank,rankStack.currentBL)
@@ -137,8 +143,8 @@ class IntREPL extends REPLBase {
     }
 
     def bracketLevel(level: Int, rank: Int): Tuple2[Int, Boolean] = {
-        if (rank == 1) return (level + 1, true)
-        else if (rank == 2) {
+        if (rank == 0) return (level + 1, true)
+        else if (rank == 1) {
             if (level > 0) return  (level - 1, true)
             else return ((level- 1), false)
         }
