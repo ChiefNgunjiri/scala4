@@ -1,1188 +1,356 @@
 1
+List(1)
+list size is 1
+Stack() adiing 1
+Stack(1) added 1
+	Stack(1)
+1
 ( 42 )
-adding0
-List(0)
-ranklist is List(0)
-List(0)
-running
-ranklist is List()
+	List(42)
+list size is 1
+Stack() adiing 42
+Stack(42) added 42
+
+Stack(42)
+42
 1178 + 465 + 65 + 204 + 444
-adding5
-List(5)
-ranklist is List(5)
-ranklist is List(5, 5)
-ranklist is List(5, 5, 5)
-ranklist is List(5, 5, 5, 5)
+*List(1178, 465, 65, 204, 444, +, +, +, +)
+list size is 9
+Stack() adiing +
+Stack(+) added +
+Stack(+) adiing +
+Stack(+, +) added +
+Stack(+, +) adiing +
+Stack(+, +, +) added +
+Stack(+, +, +) adiing +
+Stack(+, +, +, +) added +
+Stack(+, +, +, +) adiing 444
+!Stack(444, +, +, +, +) added 444
+"Stack(444, +, +, +, +) adiing 204
+&Stack(204, 444, +, +, +, +) added 204
+&Stack(204, 444, +, +, +, +) adiing 65
+)Stack(65, 204, 444, +, +, +, +) added 65
++Stack(65, 204, 444, +, +, +, +) adiing 465
+/Stack(465, 65, 204, 444, +, +, +, +) added 465
+1Stack(465, 65, 204, 444, +, +, +, +) adiing 1178
+6Stack(1178, 465, 65, 204, 444, +, +, +, +) added 1178
++Stack(1178, 465, 65, 204, 444, +, +, +, +)
+
+second level
+204 444
 ( 12 + 1 ) + ( 45 + 547 + 56 )
-adding0
-List(0)
-ranklist is List(0)
-ranklist is List(0, 5)
-List(0, 5)
-running
-5
-()
-ranklist is List()
-adding5
-List(5)
-ranklist is List(5)
-adding0
-List(5, 0)
-ranklist is List(5, 0)
-ranklist is List(5, 0, 5)
-ranklist is List(5, 0, 5, 5)
-List(5, 0, 5, 5)
-running
-5
-()
-5
-()
-ranklist is List(5)
+%List(12, 1, +, 45, 547, 56, +, +, +)
+list size is 9
+Stack() adiing +
+Stack(+) added +
+Stack(+) adiing +
+Stack(+, +) added +
+Stack(+, +) adiing +
+Stack(+, +, +) added +
+Stack(+, +, +) adiing 56
+Stack(56, +, +, +) added 56
+Stack(56, +, +, +) adiing 547
+"Stack(547, 56, +, +, +) added 547
+"Stack(547, 56, +, +, +) adiing 45
+%Stack(45, 547, 56, +, +, +) added 45
+%Stack(45, 547, 56, +, +, +) adiing +
+'Stack(+, 45, 547, 56, +, +, +) added +
+(Stack(+, 45, 547, 56, +, +, +) adiing 1
+*Stack(1, +, 45, 547, 56, +, +, +) added 1
+,Stack(1, +, 45, 547, 56, +, +, +) adiing 12
+/Stack(12, 1, +, 45, 547, 56, +, +, +) added 12
+&Stack(12, 1, +, 45, 547, 56, +, +, +)
+enterning calulation
+solution24
+
+second level
+24 45
 	10 + -11
-adding5
-List(5)
-ranklist is List(5)
+List(10, -11, +)
+list size is 3
+Stack() adiing +
+Stack(+) added +
+Stack(+) adiing -11
+Stack(-11, +) added -11
+Stack(-11, +) adiing 10
+Stack(10, -11, +) added 10
+Stack(10, -11, +)
+second level
+10 -11
 5 - 2
-adding6
-List(6)
-ranklist is List(6)
+List(5, 2, -)
+list size is 3
+Stack() adiing -
+Stack(-) added -
+Stack(-) adiing 2
+Stack(2, -) added 2
+Stack(2, -) adiing 5
+Stack(5, 2, -) added 5
+Stack(5, 2, -)
+second level
+5 2
 24 - ( 75 - 643 )
-adding6
-List(6)
-ranklist is List(6)
-adding0
-List(6, 0)
-ranklist is List(6, 0)
-ranklist is List(6, 0, 6)
-List(6, 0, 6)
-running
-6
-()
-ranklist is List(6)
+List(24, 75, 643, -, -)
+list size is 5
+Stack() adiing -
+Stack(-) added -
+Stack(-) adiing -
+Stack(-, -) added -
+Stack(-, -) adiing 643
+Stack(643, -, -) added 643
+Stack(643, -, -) adiing 75
+Stack(75, 643, -, -) added 75
+Stack(75, 643, -, -) adiing 24
+"Stack(24, 75, 643, -, -) added 24
+Stack(24, 75, 643, -, -)
+
 	( 0 - 29 )
-	adding0
-	List(0)
-	ranklist is List(0)
-	ranklist is List(0, 6)
-	List(0, 6)
-	running
-	6
-	()
-	ranklist is List()
+	List(0, 29, -)
+	list size is 3
+	Stack() adiing -
+	Stack(-) added -
+	Stack(-) adiing 29
+	Stack(29, -) added 29
+	Stack(29, -) adiing 0
+	Stack(0, 29, -) added 0
+	Stack(0, 29, -)
+	second level
+	0 29
 
 3 - -5
 
-adding6
+List(3, -5, -)
 
-List(6)
+list size is 3
 
-ranklist is List(6)
+Stack() adiing -
+
+Stack(-) added -
+
+Stack(-) adiing -5
+
+Stack(-5, -) added -5
+
+Stack(-5, -) adiing 3
+
+Stack(3, -5, -) added 3
+
+Stack(3, -5, -)
+
+second level
+
+3 -5
 2 * 4
-adding4
-List(4)
-ranklist is List(4)
+List(2, 4, *)
+list size is 3
+Stack() adiing *
+Stack(*) added *
+Stack(*) adiing 4
+Stack(4, *) added 4
+Stack(4, *) adiing 2
+Stack(2, 4, *) added 2
+Stack(2, 4, *)
+second level
+2 4
 ( 23 * 123 ) * ( 2 * 32 )
-adding0
-List(0)
-ranklist is List(0)
-ranklist is List(0, 4)
-List(0, 4)
-running
-4
-()
-ranklist is List()
-adding4
-List(4)
-ranklist is List(4)
-adding0
-List(4, 0)
-ranklist is List(4, 0)
-ranklist is List(4, 0, 4)
-List(4, 0, 4)
-running
-4
-()
-ranklist is List(4)
+List(23, 123, *, 2, 32, *, *)
+list size is 7
+Stack() adiing *
+Stack(*) added *
+Stack(*) adiing *
+Stack(*, *) added *
+Stack(*, *) adiing 32
+Stack(32, *, *) added 32
+Stack(32, *, *) adiing 2
+Stack(2, 32, *, *) added 2
+Stack(2, 32, *, *) adiing *
+Stack(*, 2, 32, *, *) added *
+!Stack(*, 2, 32, *, *) adiing 123
+%Stack(123, *, 2, 32, *, *) added 123
+%Stack(123, *, 2, 32, *, *) adiing 23
+(Stack(23, 123, *, 2, 32, *, *) added 23
+Stack(23, 123, *, 2, 32, *, *)
+enterning calulation
+
+solution1
+
+1
 ( -10 * 64 ) * ( 2 * 32 )
-adding0
-List(0)
-ranklist is List(0)
-ranklist is List(0, 4)
-List(0, 4)
-running
-4
-()
-ranklist is List()
-adding4
-List(4)
-ranklist is List(4)
-adding0
-List(4, 0)
-ranklist is List(4, 0)
-ranklist is List(4, 0, 4)
-List(4, 0, 4)
-running
-4
-()
-ranklist is List(4)
+List(-10, 64, *, 2, 32, *, *)
+list size is 7
+Stack() adiing *
+Stack(*) added *
+Stack(*) adiing *
+Stack(*, *) added *
+Stack(*, *) adiing 32
+Stack(32, *, *) added 32
+Stack(32, *, *) adiing 2
+Stack(2, 32, *, *) added 2
+Stack(2, 32, *, *) adiing *
+Stack(*, 2, 32, *, *) added *
+ Stack(*, 2, 32, *, *) adiing 64
+#Stack(64, *, 2, 32, *, *) added 64
+%Stack(64, *, 2, 32, *, *) adiing -10
+)Stack(-10, 64, *, 2, 32, *, *) added -10
+Stack(-10, 64, *, 2, 32, *, *)
+enterning calulation
+
+solution1
+
+1
 
 1 + 4 * 5
-adding5
-List(5)
-ranklist is List(5)
-ranklist is List(5)
+List(1, 4, *, 5, +)
+list size is 5
+Stack() adiing +
+Stack(+) added +
+Stack(+) adiing 5
+Stack(5, +) added 5
+Stack(5, +) adiing *
+Stack(*, 5, +) added *
+Stack(*, 5, +) adiing 4
+Stack(4, *, 5, +) added 4
+Stack(4, *, 5, +) adiing 1
+Stack(1, 4, *, 5, +) added 1
+Stack(1, 4, *, 5, +)
+enterning calulation
+
+solution1
+
+1
 5 * ( 45 + 1247 * 87 ) + 583
-adding4
-List(4)
-ranklist is List(4)
-adding0
-List(4, 0)
-ranklist is List(4, 0)
-ranklist is List(4, 0, 5)
-ranklist is List(4, 0, 5)
-List(4, 0, 5)
-running
-5
-()
-ranklist is List(4)
-ranklist is List(4, 5)
+'List(5, 45, 1247, *, 87, +, 583, +, *)
+list size is 9
+Stack() adiing *
+Stack(*) added *
+Stack(*) adiing +
+Stack(+, *) added +
+Stack(+, *) adiing 583
+Stack(583, +, *) added 583
+Stack(583, +, *) adiing +
+Stack(+, 583, +, *) added +
+Stack(+, 583, +, *) adiing 87
+!Stack(87, +, 583, +, *) added 87
+!Stack(87, +, 583, +, *) adiing *
+#Stack(*, 87, +, 583, +, *) added *
+'Stack(*, 87, +, 583, +, *) adiing 1247
+,Stack(1247, *, 87, +, 583, +, *) added 1247
++Stack(1247, *, 87, +, 583, +, *) adiing 45
+.Stack(45, 1247, *, 87, +, 583, +, *) added 45
+.Stack(45, 1247, *, 87, +, 583, +, *) adiing 5
+0Stack(5, 45, 1247, *, 87, +, 583, +, *) added 5
+(Stack(5, 45, 1247, *, 87, +, 583, +, *)
+
+second level
+* 87
 *( 43 - ( 35 * 2 + ( 32 - ( 45 ) * 2 ) ) )
-adding0
-List(0)
-ranklist is List(0)
-ranklist is List(0, 6)
-adding0
-List(0, 6, 0)
-ranklist is List(0, 6, 0)
-ranklist is List(0, 6, 0, 4)
- ranklist is List(0, 6, 0, 4, 5)
-adding0
-List(0, 6, 0, 4, 5, 0)
-#ranklist is List(0, 6, 0, 4, 5, 0)
-&ranklist is List(0, 6, 0, 4, 5, 0, 6)
-adding0
-List(0, 6, 0, 4, 5, 0, 6, 0)
-)ranklist is List(0, 6, 0, 4, 5, 0, 6, 0)
-List(0, 6, 0, 4, 5, 0, 6, 0)
-running
-&ranklist is List(0, 6, 0, 4, 5, 0, 6)
-&ranklist is List(0, 6, 0, 4, 5, 0, 6)
-List(0, 6, 0, 4, 5, 0, 6)
-running
-6
-()
- ranklist is List(0, 6, 0, 4, 5)
-List(0, 6, 0, 4, 5)
-running
-5
-()
-4
-()
-ranklist is List(0, 6)
-List(0, 6)
-running
-6
-()
-ranklist is List()
+*List(43, 35, 2, 32, 45, *, 2, -, +, *, -)
+list size is 11
+Stack() adiing -
+Stack(-) added -
+Stack(-) adiing *
+Stack(*, -) added *
+Stack(*, -) adiing +
+Stack(+, *, -) added +
+Stack(+, *, -) adiing -
+Stack(-, +, *, -) added -
+Stack(-, +, *, -) adiing 2
+Stack(2, -, +, *, -) added 2
+Stack(2, -, +, *, -) adiing *
+ Stack(*, 2, -, +, *, -) added *
+"Stack(*, 2, -, +, *, -) adiing 45
+%Stack(45, *, 2, -, +, *, -) added 45
+&Stack(45, *, 2, -, +, *, -) adiing 32
+)Stack(32, 45, *, 2, -, +, *, -) added 32
+)Stack(32, 45, *, 2, -, +, *, -) adiing 2
++Stack(2, 32, 45, *, 2, -, +, *, -) added 2
+-Stack(2, 32, 45, *, 2, -, +, *, -) adiing 35
+0Stack(35, 2, 32, 45, *, 2, -, +, *, -) added 35
+1Stack(35, 2, 32, 45, *, 2, -, +, *, -) adiing 43
+4Stack(43, 35, 2, 32, 45, *, 2, -, +, *, -) added 43
++Stack(43, 35, 2, 32, 45, *, 2, -, +, *, -)
+
+enterning calulation
+
+solution1
+
+1
 B35 + ( 35 * ( ( 54 - 465 ) + ( ( 35 ) - 3 ) ) - ( 43 + 61 ) ) * 1
-adding5
-List(5)
-ranklist is List(5)
-adding0
-List(5, 0)
-ranklist is List(5, 0)
-ranklist is List(5, 0, 4)
-adding0
-List(5, 0, 4, 0)
-ranklist is List(5, 0, 4, 0)
-adding0
-List(5, 0, 4, 0, 0)
- ranklist is List(5, 0, 4, 0, 0)
-#ranklist is List(5, 0, 4, 0, 0, 6)
-List(5, 0, 4, 0, 0, 6)
-running
+@List(35, 35, 54, 465, -, 35, 3, -, +, 43, 61, +, -, *, *, 1, +)
+list size is 17
+Stack() adiing +
+Stack(+) added +
+Stack(+) adiing 1
+Stack(1, +) added 1
+Stack(1, +) adiing *
+Stack(*, 1, +) added *
+Stack(*, 1, +) adiing *
+Stack(*, *, 1, +) added *
+Stack(*, *, 1, +) adiing -
+Stack(-, *, *, 1, +) added -
+Stack(-, *, *, 1, +) adiing +
+ Stack(+, -, *, *, 1, +) added +
+"Stack(+, -, *, *, 1, +) adiing 61
+%Stack(61, +, -, *, *, 1, +) added 61
+&Stack(61, +, -, *, *, 1, +) adiing 43
+)Stack(43, 61, +, -, *, *, 1, +) added 43
+)Stack(43, 61, +, -, *, *, 1, +) adiing +
++Stack(+, 43, 61, +, -, *, *, 1, +) added +
+,Stack(+, 43, 61, +, -, *, *, 1, +) adiing -
+.Stack(-, +, 43, 61, +, -, *, *, 1, +) added -
+/Stack(-, +, 43, 61, +, -, *, *, 1, +) adiing 3
+1Stack(3, -, +, 43, 61, +, -, *, *, 1, +) added 3
+3Stack(3, -, +, 43, 61, +, -, *, *, 1, +) adiing 35
+6Stack(35, 3, -, +, 43, 61, +, -, *, *, 1, +) added 35
+6Stack(35, 3, -, +, 43, 61, +, -, *, *, 1, +) adiing -
+8Stack(-, 35, 3, -, +, 43, 61, +, -, *, *, 1, +) added -
+;Stack(-, 35, 3, -, +, 43, 61, +, -, *, *, 1, +) adiing 465
+?Stack(465, -, 35, 3, -, +, 43, 61, +, -, *, *, 1, +) added 465
+?Stack(465, -, 35, 3, -, +, 43, 61, +, -, *, *, 1, +) adiing 54
+BStack(54, 465, -, 35, 3, -, +, 43, 61, +, -, *, *, 1, +) added 54
+CStack(54, 465, -, 35, 3, -, +, 43, 61, +, -, *, *, 1, +) adiing 35
+FStack(35, 54, 465, -, 35, 3, -, +, 43, 61, +, -, *, *, 1, +) added 35
+GStack(35, 54, 465, -, 35, 3, -, +, 43, 61, +, -, *, *, 1, +) adiing 35
+JStack(35, 35, 54, 465, -, 35, 3, -, +, 43, 61, +, -, *, *, 1, +) added 35
+AStack(35, 35, 54, 465, -, 35, 3, -, +, 43, 61, +, -, *, *, 1, +)
+
+
+enterning calulation
+
+solution6
+
 6
-()
-ranklist is List(5, 0, 4, 0)
- ranklist is List(5, 0, 4, 0, 5)
-adding0
-List(5, 0, 4, 0, 5, 0)
-#ranklist is List(5, 0, 4, 0, 5, 0)
-adding0
-List(5, 0, 4, 0, 5, 0, 0)
-&ranklist is List(5, 0, 4, 0, 5, 0, 0)
-List(5, 0, 4, 0, 5, 0, 0)
-running
-#ranklist is List(5, 0, 4, 0, 5, 0)
-&ranklist is List(5, 0, 4, 0, 5, 0, 6)
-List(5, 0, 4, 0, 5, 0, 6)
-running
-6
-()
- ranklist is List(5, 0, 4, 0, 5)
-List(5, 0, 4, 0, 5)
-running
-5
-()
-ranklist is List(5, 0, 4)
-ranklist is List(5, 0, 4, 6)
-adding0
-List(5, 0, 4, 6, 0)
- ranklist is List(5, 0, 4, 6, 0)
-#ranklist is List(5, 0, 4, 6, 0, 5)
-List(5, 0, 4, 6, 0, 5)
-running
-5
-()
-ranklist is List(5, 0, 4, 6)
-List(5, 0, 4, 6)
-running
-6
-()
-4
-()
-ranklist is List(5)
-ranklist is List(5)
 n = 1
-adding0
-List(0)
-ranklist is List(0)
-adding0
-List(0, 0)
-ranklist is List(0, 0)
 n = 1 + 4 * 5
-adding0
-List(0)
-ranklist is List(0)
-adding0
-List(0, 0)
-ranklist is List(0, 0)
-ranklist is List(0, 0, 5)
-ranklist is List(0, 0, 5)
 n = 21
-adding0
-List(0)
-ranklist is List(0)
-adding0
-List(0, 0)
-ranklist is List(0, 0)
-
-m = n + 4
-adding0
-List(0)
-ranklist is List(0)
-adding0
-List(0, 0)
-ranklist is List(0, 0)
-adding0
-List(0, 0, 0)
-ranklist is List(0, 0, 0)
-ranklist is List(0, 0, 0, 5)
 n = -16
-adding0
-List(0)
-ranklist is List(0)
-adding0
-List(0, 0)
-ranklist is List(0, 0)
-
-n = n + 4
-adding0
-List(0)
-ranklist is List(0)
-adding0
-List(0, 0)
-ranklist is List(0, 0)
-adding0
-List(0, 0, 0)
-ranklist is List(0, 0, 0)
-ranklist is List(0, 0, 0, 5)
 p = 12
-adding0
-List(0)
-ranklist is List(0)
-adding0
-List(0, 0)
-ranklist is List(0, 0)
-p = ( 1 + p * 2 ) * 2 + p
-adding0
-List(0)
-ranklist is List(0)
-adding0
-List(0, 0)
-ranklist is List(0, 0)
-adding0
-List(0, 0, 0)
-ranklist is List(0, 0, 0)
-ranklist is List(0, 0, 0, 5)
-adding0
-List(0, 0, 0, 5, 0)
- ranklist is List(0, 0, 0, 5, 0)
-#ranklist is List(0, 0, 0, 5, 0, 4)
-List(0, 0, 0, 5, 0, 4)
-running
-4
-()
-ranklist is List(0, 0, 0, 5)
-ranklist is List(0, 0, 0, 5)
- ranklist is List(0, 0, 0, 5, 5)
-adding0
-List(0, 0, 0, 5, 5, 0)
-#ranklist is List(0, 0, 0, 5, 5, 0)
 q = 12
-adding0
-List(0)
-ranklist is List(0)
-adding0
-List(0, 0)
-ranklist is List(0, 0)
-5 + q
-adding5
-List(5)
-ranklist is List(5)
-adding0
-List(5, 0)
-ranklist is List(5, 0)
 r = 4 * 12
-adding0
-List(0)
-ranklist is List(0)
-adding0
-List(0, 0)
-ranklist is List(0, 0)
-ranklist is List(0, 0, 4)
-r = ( r * 2 - 45 ) + 126
-adding0
-List(0)
-ranklist is List(0)
-adding0
-List(0, 0)
-ranklist is List(0, 0)
-adding0
-List(0, 0, 0)
-ranklist is List(0, 0, 0)
-adding0
-List(0, 0, 0, 0)
-ranklist is List(0, 0, 0, 0)
- ranklist is List(0, 0, 0, 0, 4)
-#ranklist is List(0, 0, 0, 0, 4, 6)
-List(0, 0, 0, 0, 4, 6)
-running
-6
-()
-4
-()
-ranklist is List(0, 0, 0)
-ranklist is List(0, 0, 0, 5)
-45 + ( r * r ) - ( 2 + 16 )
-adding5
-List(5)
-ranklist is List(5)
-adding0
-List(5, 0)
-ranklist is List(5, 0)
-adding0
-List(5, 0, 0)
-ranklist is List(5, 0, 0)
-ranklist is List(5, 0, 0, 4)
-adding0
-List(5, 0, 0, 4, 0)
- ranklist is List(5, 0, 0, 4, 0)
-List(5, 0, 0, 4, 0)
-running
-ranklist is List(5, 0, 0, 4)
- ranklist is List(5, 0, 0, 4, 6)
-adding0
-List(5, 0, 0, 4, 6, 0)
-#ranklist is List(5, 0, 0, 4, 6, 0)
-&ranklist is List(5, 0, 0, 4, 6, 0, 5)
-List(5, 0, 0, 4, 6, 0, 5)
-running
-5
-()
- ranklist is List(5, 0, 0, 4, 6)
 @ ( 4 * 4 ) * x
-adding0
-List(0)
-ranklist is List(0)
-adding0
-List(0, 0)
-ranklist is List(0, 0)
-ranklist is List(0, 0, 4)
-List(0, 0, 4)
-running
-4
-()
-ranklist is List(0)
-ranklist is List(0, 4)
-adding0
-List(0, 4, 0)
-ranklist is List(0, 4, 0)
 @ 0 + x
-adding0
-List(0)
-ranklist is List(0)
-ranklist is List(0, 5)
-adding0
-List(0, 5, 0)
-ranklist is List(0, 5, 0)
 @ x + 0
-adding0
-List(0)
-ranklist is List(0)
-adding0
-List(0, 0)
-ranklist is List(0, 0)
-ranklist is List(0, 0, 5)
 @ 1 * x
-adding0
-List(0)
-ranklist is List(0)
-ranklist is List(0, 4)
-adding0
-List(0, 4, 0)
-ranklist is List(0, 4, 0)
 @ y * 1
-adding0
-List(0)
-ranklist is List(0)
-adding0
-List(0, 0)
-ranklist is List(0, 0)
-ranklist is List(0, 0, 4)
 @ 0 * x
-adding0
-List(0)
-ranklist is List(0)
-ranklist is List(0, 4)
-adding0
-List(0, 4, 0)
-ranklist is List(0, 4, 0)
 @ x * 0
-adding0
-List(0)
-ranklist is List(0)
-adding0
-List(0, 0)
-ranklist is List(0, 0)
-ranklist is List(0, 0, 4)
  @ ( x * 0 ) + ( y * 2 )
- adding0
- List(0)
- ranklist is List(0)
- adding0
- List(0, 0)
- ranklist is List(0, 0)
- adding0
- List(0, 0, 0)
- ranklist is List(0, 0, 0)
- ranklist is List(0, 0, 0, 4)
- List(0, 0, 0, 4)
- running
- 4
- ()
- ranklist is List(0, 0)
- ranklist is List(0, 0, 5)
- adding0
- List(0, 0, 5, 0)
- ranklist is List(0, 0, 5, 0)
- adding0
- List(0, 0, 5, 0, 0)
-  ranklist is List(0, 0, 5, 0, 0)
- #ranklist is List(0, 0, 5, 0, 0, 4)
- List(0, 0, 5, 0, 0, 4)
- running
- 4
- ()
- ranklist is List(0, 0, 5, 0)
 !@ ( x * -11 ) + ( a * 0 )
-!adding0
-!List(0)
-!ranklist is List(0)
-!adding0
-!List(0, 0)
-!ranklist is List(0, 0)
-!adding0
-!List(0, 0, 0)
-!ranklist is List(0, 0, 0)
-!ranklist is List(0, 0, 0, 4)
-!List(0, 0, 0, 4)
-!running
-!4
-!()
-!ranklist is List(0, 0)
-!ranklist is List(0, 0, 5)
-!adding0
-!List(0, 0, 5, 0)
-!ranklist is List(0, 0, 5, 0)
-!adding0
-!List(0, 0, 5, 0, 0)
-! ranklist is List(0, 0, 5, 0, 0)
-!#ranklist is List(0, 0, 5, 0, 0, 4)
-!List(0, 0, 5, 0, 0, 4)
-!running
-!4
-!()
-!ranklist is List(0, 0, 5, 0)
 "@ ( a + 6 ) * 2 * 0
-"adding0
-"List(0)
-"ranklist is List(0)
-"adding0
-"List(0, 0)
-"ranklist is List(0, 0)
-"adding0
-"List(0, 0, 0)
-"ranklist is List(0, 0, 0)
-"ranklist is List(0, 0, 0, 5)
-"List(0, 0, 0, 5)
-"running
-"5
-"()
-"ranklist is List(0, 0)
-"ranklist is List(0, 0, 4)
-"ranklist is List(0, 0, 4, 4)
 #@ 0 * ( x + y )
-#adding0
-#List(0)
-#ranklist is List(0)
-#ranklist is List(0, 4)
-#adding0
-#List(0, 4, 0)
-#ranklist is List(0, 4, 0)
-#adding0
-#List(0, 4, 0, 0)
-#ranklist is List(0, 4, 0, 0)
-# ranklist is List(0, 4, 0, 0, 5)
-#adding0
-#List(0, 4, 0, 0, 5, 0)
-##ranklist is List(0, 4, 0, 0, 5, 0)
-#List(0, 4, 0, 0, 5, 0)
-#running
-# ranklist is List(0, 4, 0, 0, 5)
 $.@ ( ( ( 23 * 2 ) + ( 2 * 9 ) ) + 34 + 4 ) * y
-$adding0
-$List(0)
-$ranklist is List(0)
-$adding0
-$List(0, 0)
-$ranklist is List(0, 0)
-$adding0
-$List(0, 0, 0)
-$ranklist is List(0, 0, 0)
-$adding0
-$List(0, 0, 0, 0)
-$ranklist is List(0, 0, 0, 0)
-$ ranklist is List(0, 0, 0, 0, 4)
-$List(0, 0, 0, 0, 4)
-$running
-$4
-$()
-$ranklist is List(0, 0, 0)
-$ranklist is List(0, 0, 0, 5)
-$adding0
-$List(0, 0, 0, 5, 0)
-$ ranklist is List(0, 0, 0, 5, 0)
-$#ranklist is List(0, 0, 0, 5, 0, 4)
-$List(0, 0, 0, 5, 0, 4)
-$running
-$4
-$()
-$ranklist is List(0, 0, 0, 5)
-$List(0, 0, 0, 5)
-$running
-$5
-$()
-$ranklist is List(0, 0)
-$ranklist is List(0, 0, 5)
-$ranklist is List(0, 0, 5, 5)
-$List(0, 0, 5, 5)
-$running
-$5
-$()
-$5
-$()
-$ranklist is List(0)
-$ranklist is List(0, 4)
-$adding0
-$List(0, 4, 0)
-$ranklist is List(0, 4, 0)
 % @ ( x + y + z ) - ( x + y + z )
-%adding0
-%List(0)
-%ranklist is List(0)
-%adding0
-%List(0, 0)
-%ranklist is List(0, 0)
-%adding0
-%List(0, 0, 0)
-%ranklist is List(0, 0, 0)
-%ranklist is List(0, 0, 0, 5)
-%adding0
-%List(0, 0, 0, 5, 0)
-% ranklist is List(0, 0, 0, 5, 0)
-%#ranklist is List(0, 0, 0, 5, 0, 5)
-%adding0
-%List(0, 0, 0, 5, 0, 5, 0)
-%&ranklist is List(0, 0, 0, 5, 0, 5, 0)
-%List(0, 0, 0, 5, 0, 5, 0)
-%running
-%#ranklist is List(0, 0, 0, 5, 0, 5)
-%&ranklist is List(0, 0, 0, 5, 0, 5, 6)
-%adding0
-%List(0, 0, 0, 5, 0, 5, 6, 0)
-%)ranklist is List(0, 0, 0, 5, 0, 5, 6, 0)
-%adding0
-% List(0, 0, 0, 5, 0, 5, 6, 0, 0)
-%,ranklist is List(0, 0, 0, 5, 0, 5, 6, 0, 0)
-%/ranklist is List(0, 0, 0, 5, 0, 5, 6, 0, 0, 5)
-%adding0
-%&List(0, 0, 0, 5, 0, 5, 6, 0, 0, 5, 0)
-%2ranklist is List(0, 0, 0, 5, 0, 5, 6, 0, 0, 5, 0)
-%5ranklist is List(0, 0, 0, 5, 0, 5, 6, 0, 0, 5, 0, 5)
-%adding0
-%,List(0, 0, 0, 5, 0, 5, 6, 0, 0, 5, 0, 5, 0)
-%8ranklist is List(0, 0, 0, 5, 0, 5, 6, 0, 0, 5, 0, 5, 0)
-%,List(0, 0, 0, 5, 0, 5, 6, 0, 0, 5, 0, 5, 0)
-%running
-%5ranklist is List(0, 0, 0, 5, 0, 5, 6, 0, 0, 5, 0, 5)
 &(@ ( x + y + z ) - ( ( x + y + z ) + 0 )
-&adding0
-&List(0)
-&ranklist is List(0)
-&adding0
-&List(0, 0)
-&ranklist is List(0, 0)
-&adding0
-&List(0, 0, 0)
-&ranklist is List(0, 0, 0)
-&ranklist is List(0, 0, 0, 5)
-&adding0
-&List(0, 0, 0, 5, 0)
-& ranklist is List(0, 0, 0, 5, 0)
-&#ranklist is List(0, 0, 0, 5, 0, 5)
-&adding0
-&List(0, 0, 0, 5, 0, 5, 0)
-&&ranklist is List(0, 0, 0, 5, 0, 5, 0)
-&List(0, 0, 0, 5, 0, 5, 0)
-&running
-&#ranklist is List(0, 0, 0, 5, 0, 5)
-&&ranklist is List(0, 0, 0, 5, 0, 5, 6)
-&adding0
-&List(0, 0, 0, 5, 0, 5, 6, 0)
-&)ranklist is List(0, 0, 0, 5, 0, 5, 6, 0)
-&adding0
-& List(0, 0, 0, 5, 0, 5, 6, 0, 0)
-&,ranklist is List(0, 0, 0, 5, 0, 5, 6, 0, 0)
-&adding0
-&#List(0, 0, 0, 5, 0, 5, 6, 0, 0, 0)
-&/ranklist is List(0, 0, 0, 5, 0, 5, 6, 0, 0, 0)
-&2ranklist is List(0, 0, 0, 5, 0, 5, 6, 0, 0, 0, 5)
-&adding0
-&)List(0, 0, 0, 5, 0, 5, 6, 0, 0, 0, 5, 0)
-&5ranklist is List(0, 0, 0, 5, 0, 5, 6, 0, 0, 0, 5, 0)
-&8ranklist is List(0, 0, 0, 5, 0, 5, 6, 0, 0, 0, 5, 0, 5)
-&adding0
-&/List(0, 0, 0, 5, 0, 5, 6, 0, 0, 0, 5, 0, 5, 0)
-&;ranklist is List(0, 0, 0, 5, 0, 5, 6, 0, 0, 0, 5, 0, 5, 0)
-&/List(0, 0, 0, 5, 0, 5, 6, 0, 0, 0, 5, 0, 5, 0)
-&running
-&8ranklist is List(0, 0, 0, 5, 0, 5, 6, 0, 0, 0, 5, 0, 5)
-&;ranklist is List(0, 0, 0, 5, 0, 5, 6, 0, 0, 0, 5, 0, 5, 5)
-&/List(0, 0, 0, 5, 0, 5, 6, 0, 0, 0, 5, 0, 5, 5)
-&running
-&5
-&()
-&5
-&()
-&2ranklist is List(0, 0, 0, 5, 0, 5, 6, 0, 0, 0, 5)
 '@ a + ( b * 1 )
-'adding0
-'List(0)
-'ranklist is List(0)
-'adding0
-'List(0, 0)
-'ranklist is List(0, 0)
-'ranklist is List(0, 0, 5)
-'adding0
-'List(0, 0, 5, 0)
-'ranklist is List(0, 0, 5, 0)
-'adding0
-'List(0, 0, 5, 0, 0)
-' ranklist is List(0, 0, 5, 0, 0)
-'#ranklist is List(0, 0, 5, 0, 0, 4)
-'List(0, 0, 5, 0, 0, 4)
-'running
-'4
-'()
-'ranklist is List(0, 0, 5, 0)
 ( @ a + ( 0 + ( 0 + ( 0 + 0 ) ) )
-(adding0
-(List(0)
-(ranklist is List(0)
-(adding0
-(List(0, 0)
-(ranklist is List(0, 0)
-(ranklist is List(0, 0, 5)
-(adding0
-(List(0, 0, 5, 0)
-(ranklist is List(0, 0, 5, 0)
-( ranklist is List(0, 0, 5, 0, 5)
-(adding0
-(List(0, 0, 5, 0, 5, 0)
-(#ranklist is List(0, 0, 5, 0, 5, 0)
-(&ranklist is List(0, 0, 5, 0, 5, 0, 5)
-(adding0
-(List(0, 0, 5, 0, 5, 0, 5, 0)
-()ranklist is List(0, 0, 5, 0, 5, 0, 5, 0)
-(,ranklist is List(0, 0, 5, 0, 5, 0, 5, 0, 5)
-( List(0, 0, 5, 0, 5, 0, 5, 0, 5)
-(running
-(5
-(()
-(&ranklist is List(0, 0, 5, 0, 5, 0, 5)
-(List(0, 0, 5, 0, 5, 0, 5)
-(running
-(5
-(()
-( ranklist is List(0, 0, 5, 0, 5)
-(List(0, 0, 5, 0, 5)
-(running
-(5
-(()
-(ranklist is List(0, 0, 5)
 )@ ( a * b ) + ( a * c )
-)adding0
-)List(0)
-)ranklist is List(0)
-)adding0
-)List(0, 0)
-)ranklist is List(0, 0)
-)adding0
-)List(0, 0, 0)
-)ranklist is List(0, 0, 0)
-)ranklist is List(0, 0, 0, 4)
-)adding0
-)List(0, 0, 0, 4, 0)
-) ranklist is List(0, 0, 0, 4, 0)
-)List(0, 0, 0, 4, 0)
-)running
-)ranklist is List(0, 0, 0, 4)
-) ranklist is List(0, 0, 0, 4, 5)
-)adding0
-)List(0, 0, 0, 4, 5, 0)
-)#ranklist is List(0, 0, 0, 4, 5, 0)
-)adding0
-)List(0, 0, 0, 4, 5, 0, 0)
-)&ranklist is List(0, 0, 0, 4, 5, 0, 0)
-))ranklist is List(0, 0, 0, 4, 5, 0, 0, 4)
-)adding0
-) List(0, 0, 0, 4, 5, 0, 0, 4, 0)
-),ranklist is List(0, 0, 0, 4, 5, 0, 0, 4, 0)
-) List(0, 0, 0, 4, 5, 0, 0, 4, 0)
-)running
-))ranklist is List(0, 0, 0, 4, 5, 0, 0, 4)
 *(@ ( b * ( 1 + x ) ) + ( ( 1 + x ) * c )
-*adding0
-*List(0)
-*ranklist is List(0)
-*adding0
-*List(0, 0)
-*ranklist is List(0, 0)
-*adding0
-*List(0, 0, 0)
-*ranklist is List(0, 0, 0)
-*ranklist is List(0, 0, 0, 4)
-*adding0
-*List(0, 0, 0, 4, 0)
-* ranklist is List(0, 0, 0, 4, 0)
-*#ranklist is List(0, 0, 0, 4, 0, 5)
-*adding0
-*List(0, 0, 0, 4, 0, 5, 0)
-*&ranklist is List(0, 0, 0, 4, 0, 5, 0)
-*List(0, 0, 0, 4, 0, 5, 0)
-*running
-*#ranklist is List(0, 0, 0, 4, 0, 5)
-*List(0, 0, 0, 4, 0, 5)
-*running
-*5
-*()
-*ranklist is List(0, 0, 0, 4)
-* ranklist is List(0, 0, 0, 4, 5)
-*adding0
-*List(0, 0, 0, 4, 5, 0)
-*#ranklist is List(0, 0, 0, 4, 5, 0)
-*adding0
-*List(0, 0, 0, 4, 5, 0, 0)
-*&ranklist is List(0, 0, 0, 4, 5, 0, 0)
-*)ranklist is List(0, 0, 0, 4, 5, 0, 0, 5)
-*adding0
-* List(0, 0, 0, 4, 5, 0, 0, 5, 0)
-*,ranklist is List(0, 0, 0, 4, 5, 0, 0, 5, 0)
-* List(0, 0, 0, 4, 5, 0, 0, 5, 0)
-*running
-*)ranklist is List(0, 0, 0, 4, 5, 0, 0, 5)
-*)ranklist is List(0, 0, 0, 4, 5, 0, 0, 5)
-*adding0
-* List(0, 0, 0, 4, 5, 0, 0, 5, 0)
-*,ranklist is List(0, 0, 0, 4, 5, 0, 0, 5, 0)
-* List(0, 0, 0, 4, 5, 0, 0, 5, 0)
-*running
-*)ranklist is List(0, 0, 0, 4, 5, 0, 0, 5)
 +(@ ( ( x + 1 ) * 2 ) + ( 3 * ( x + 1 ) )
-+adding0
-+List(0)
-+ranklist is List(0)
-+adding0
-+List(0, 0)
-+ranklist is List(0, 0)
-+adding0
-+List(0, 0, 0)
-+ranklist is List(0, 0, 0)
-+adding0
-+List(0, 0, 0, 0)
-+ranklist is List(0, 0, 0, 0)
-+ ranklist is List(0, 0, 0, 0, 5)
-+List(0, 0, 0, 0, 5)
-+running
-+5
-+()
-+ranklist is List(0, 0, 0)
-+ranklist is List(0, 0, 0, 4)
-+List(0, 0, 0, 4)
-+running
-+4
-+()
-+ranklist is List(0, 0)
-+ranklist is List(0, 0, 5)
-+adding0
-+List(0, 0, 5, 0)
-+ranklist is List(0, 0, 5, 0)
-+ ranklist is List(0, 0, 5, 0, 4)
-+adding0
-+List(0, 0, 5, 0, 4, 0)
-+#ranklist is List(0, 0, 5, 0, 4, 0)
-+adding0
-+List(0, 0, 5, 0, 4, 0, 0)
-+&ranklist is List(0, 0, 5, 0, 4, 0, 0)
-+)ranklist is List(0, 0, 5, 0, 4, 0, 0, 5)
-+List(0, 0, 5, 0, 4, 0, 0, 5)
-+running
-+5
-+()
-+#ranklist is List(0, 0, 5, 0, 4, 0)
-+List(0, 0, 5, 0, 4, 0)
-+running
-+ ranklist is List(0, 0, 5, 0, 4)
 ,@ b * a + c * a
-,adding0
-,List(0)
-,ranklist is List(0)
-,adding0
-,List(0, 0)
-,ranklist is List(0, 0)
-,ranklist is List(0, 0, 4)
-,adding0
-,List(0, 0, 4, 0)
-,ranklist is List(0, 0, 4, 0)
-, ranklist is List(0, 0, 4, 0, 5)
-,adding0
-,List(0, 0, 4, 0, 5, 0)
-,#ranklist is List(0, 0, 4, 0, 5, 0)
-,&ranklist is List(0, 0, 4, 0, 5, 0, 4)
-,adding0
-,List(0, 0, 4, 0, 5, 0, 4, 0)
-,)ranklist is List(0, 0, 4, 0, 5, 0, 4, 0)
 - @ a + ( ( b * c ) + ( c * d ) )
--adding0
--List(0)
--ranklist is List(0)
--adding0
--List(0, 0)
--ranklist is List(0, 0)
--ranklist is List(0, 0, 5)
--adding0
--List(0, 0, 5, 0)
--ranklist is List(0, 0, 5, 0)
--adding0
--List(0, 0, 5, 0, 0)
-- ranklist is List(0, 0, 5, 0, 0)
--adding0
--List(0, 0, 5, 0, 0, 0)
--#ranklist is List(0, 0, 5, 0, 0, 0)
--&ranklist is List(0, 0, 5, 0, 0, 0, 4)
--adding0
--List(0, 0, 5, 0, 0, 0, 4, 0)
--)ranklist is List(0, 0, 5, 0, 0, 0, 4, 0)
--List(0, 0, 5, 0, 0, 0, 4, 0)
--running
--&ranklist is List(0, 0, 5, 0, 0, 0, 4)
--)ranklist is List(0, 0, 5, 0, 0, 0, 4, 5)
--adding0
-- List(0, 0, 5, 0, 0, 0, 4, 5, 0)
--,ranklist is List(0, 0, 5, 0, 0, 0, 4, 5, 0)
--adding0
--#List(0, 0, 5, 0, 0, 0, 4, 5, 0, 0)
--/ranklist is List(0, 0, 5, 0, 0, 0, 4, 5, 0, 0)
--2ranklist is List(0, 0, 5, 0, 0, 0, 4, 5, 0, 0, 4)
--adding0
--)List(0, 0, 5, 0, 0, 0, 4, 5, 0, 0, 4, 0)
--5ranklist is List(0, 0, 5, 0, 0, 0, 4, 5, 0, 0, 4, 0)
--)List(0, 0, 5, 0, 0, 0, 4, 5, 0, 0, 4, 0)
--running
--2ranklist is List(0, 0, 5, 0, 0, 0, 4, 5, 0, 0, 4)
--&List(0, 0, 5, 0, 0, 0, 4, 5, 0, 0, 4)
--running
--4
--()
--,ranklist is List(0, 0, 5, 0, 0, 0, 4, 5, 0)
 .z = 12
-.adding0
-.List(0)
-.ranklist is List(0)
-.adding0
-.List(0, 0)
-.ranklist is List(0, 0)
-.q = 7
-.adding0
-.List(0)
-.ranklist is List(0)
-.adding0
-.List(0, 0)
-.ranklist is List(0, 0)
-.`@ ( x - x ) + ( ( b + 0 ) * ( a + 0 ) + c * a ) - ( ( a * b ) + ( a * c ) + ( ( z + q ) * 0 ) )
-.adding0
-.List(0)
-.ranklist is List(0)
-.adding0
-.List(0, 0)
-.ranklist is List(0, 0)
-.adding0
-.List(0, 0, 0)
-.ranklist is List(0, 0, 0)
-.ranklist is List(0, 0, 0, 6)
-.adding0
-.List(0, 0, 0, 6, 0)
-. ranklist is List(0, 0, 0, 6, 0)
-.List(0, 0, 0, 6, 0)
-.running
-.ranklist is List(0, 0, 0, 6)
-.ranklist is List(0, 0, 0, 6)
-.adding0
-.List(0, 0, 0, 6, 0)
-. ranklist is List(0, 0, 0, 6, 0)
-.adding0
-.List(0, 0, 0, 6, 0, 0)
-.#ranklist is List(0, 0, 0, 6, 0, 0)
-.adding0
-.List(0, 0, 0, 6, 0, 0, 0)
-.&ranklist is List(0, 0, 0, 6, 0, 0, 0)
-.)ranklist is List(0, 0, 0, 6, 0, 0, 0, 5)
-.List(0, 0, 0, 6, 0, 0, 0, 5)
-.running
-.5
-.()
-.#ranklist is List(0, 0, 0, 6, 0, 0)
-.&ranklist is List(0, 0, 0, 6, 0, 0, 4)
-.adding0
-.List(0, 0, 0, 6, 0, 0, 4, 0)
-.)ranklist is List(0, 0, 0, 6, 0, 0, 4, 0)
-.adding0
-. List(0, 0, 0, 6, 0, 0, 4, 0, 0)
-.,ranklist is List(0, 0, 0, 6, 0, 0, 4, 0, 0)
-./ranklist is List(0, 0, 0, 6, 0, 0, 4, 0, 0, 5)
-.#List(0, 0, 0, 6, 0, 0, 4, 0, 0, 5)
-.running
-.5
-.()
-.)ranklist is List(0, 0, 0, 6, 0, 0, 4, 0)
-.,ranklist is List(0, 0, 0, 6, 0, 0, 4, 0, 5)
-.adding0
-.#List(0, 0, 0, 6, 0, 0, 4, 0, 5, 0)
-./ranklist is List(0, 0, 0, 6, 0, 0, 4, 0, 5, 0)
-.2ranklist is List(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4)
-.adding0
-.)List(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 0)
-.5ranklist is List(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 0)
-.)List(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 0)
-.running
-.2ranklist is List(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4)
-.5ranklist is List(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 6)
-.adding0
-.,List(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 6, 0)
-.8ranklist is List(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 6, 0)
-.adding0
-./List(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 6, 0, 0)
-.;ranklist is List(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 6, 0, 0)
-.adding0
-.2List(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 6, 0, 0, 0)
-.>ranklist is List(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 6, 0, 0, 0)
-.Aranklist is List(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 6, 0, 0, 0, 4)
-.adding0
-.8List(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 6, 0, 0, 0, 4, 0)
-.Dranklist is List(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 6, 0, 0, 0, 4, 0)
-.8List(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 6, 0, 0, 0, 4, 0)
-.running
-.Aranklist is List(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 6, 0, 0, 0, 4)
-.Dranklist is List(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 6, 0, 0, 0, 4, 5)
-.adding0
-.;List(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 6, 0, 0, 0, 4, 5, 0)
-.Granklist is List(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 6, 0, 0, 0, 4, 5, 0)
-.adding0
-.>List(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 6, 0, 0, 0, 4, 5, 0, 0)
-.Jranklist is List(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 6, 0, 0, 0, 4, 5, 0, 0)
-.Mranklist is List(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 6, 0, 0, 0, 4, 5, 0, 0, 4)
-.adding0
-.DList(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 6, 0, 0, 0, 4, 5, 0, 0, 4, 0)
-.Pranklist is List(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 6, 0, 0, 0, 4, 5, 0, 0, 4, 0)
-.DList(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 6, 0, 0, 0, 4, 5, 0, 0, 4, 0)
-.running
-.Mranklist is List(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 6, 0, 0, 0, 4, 5, 0, 0, 4)
-.Pranklist is List(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 6, 0, 0, 0, 4, 5, 0, 0, 4, 5)
-.adding0
-.GList(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 6, 0, 0, 0, 4, 5, 0, 0, 4, 5, 0)
-.Sranklist is List(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 6, 0, 0, 0, 4, 5, 0, 0, 4, 5, 0)
-.adding0
-.JList(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 6, 0, 0, 0, 4, 5, 0, 0, 4, 5, 0, 0)
-.Vranklist is List(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 6, 0, 0, 0, 4, 5, 0, 0, 4, 5, 0, 0)
-.adding0
-.MList(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 6, 0, 0, 0, 4, 5, 0, 0, 4, 5, 0, 0, 0)
-.Yranklist is List(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 6, 0, 0, 0, 4, 5, 0, 0, 4, 5, 0, 0, 0)
-.\ranklist is List(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 6, 0, 0, 0, 4, 5, 0, 0, 4, 5, 0, 0, 0, 5)
-.adding0
-.SList(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 6, 0, 0, 0, 4, 5, 0, 0, 4, 5, 0, 0, 0, 5, 0)
-._ranklist is List(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 6, 0, 0, 0, 4, 5, 0, 0, 4, 5, 0, 0, 0, 5, 0)
-.SList(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 6, 0, 0, 0, 4, 5, 0, 0, 4, 5, 0, 0, 0, 5, 0)
-.running
-.\ranklist is List(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 6, 0, 0, 0, 4, 5, 0, 0, 4, 5, 0, 0, 0, 5)
-.\ranklist is List(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 6, 0, 0, 0, 4, 5, 0, 0, 4, 5, 0, 0, 0, 5)
-.PList(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 6, 0, 0, 0, 4, 5, 0, 0, 4, 5, 0, 0, 0, 5)
-.running
-.5
-.()
-.Vranklist is List(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 6, 0, 0, 0, 4, 5, 0, 0, 4, 5, 0, 0)
-.JList(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 6, 0, 0, 0, 4, 5, 0, 0, 4, 5, 0, 0)
-.running
-.Sranklist is List(0, 0, 0, 6, 0, 0, 4, 0, 5, 0, 4, 6, 0, 0, 0, 4, 5, 0, 0, 4, 5, 0)
 /a = -15
-/adding0
-/List(0)
-/ranklist is List(0)
-/adding0
-/List(0, 0)
-/ranklist is List(0, 0)
-/@ a
-/adding0
-/List(0)
-/ranklist is List(0)
-/adding0
-/List(0, 0)
-/ranklist is List(0, 0)
 0a = -10
-0adding0
-0List(0)
-0ranklist is List(0)
-0adding0
-0List(0, 0)
-0ranklist is List(0, 0)
-0@ ( 3 + ( 4 * a ) ) * b
-0adding0
-0List(0)
-0ranklist is List(0)
-0adding0
-0List(0, 0)
-0ranklist is List(0, 0)
-0ranklist is List(0, 0, 5)
-0adding0
-0List(0, 0, 5, 0)
-0ranklist is List(0, 0, 5, 0)
-0 ranklist is List(0, 0, 5, 0, 4)
-0adding0
-0List(0, 0, 5, 0, 4, 0)
-0#ranklist is List(0, 0, 5, 0, 4, 0)
-0List(0, 0, 5, 0, 4, 0)
-0running
-0 ranklist is List(0, 0, 5, 0, 4)
-0List(0, 0, 5, 0, 4)
-0running
-04
-0()
-0ranklist is List(0, 0, 5)
-0ranklist is List(0, 0, 5)
-0adding0
-0List(0, 0, 5, 0)
-0ranklist is List(0, 0, 5, 0)
 1a = 3
-1adding0
-1List(0)
-1ranklist is List(0)
-1adding0
-1List(0, 0)
-1ranklist is List(0, 0)
-1
-b = a * 4
-1adding0
-1List(0)
-1ranklist is List(0)
-1adding0
-1List(0, 0)
-1ranklist is List(0, 0)
-1adding0
-1List(0, 0, 0)
-1ranklist is List(0, 0, 0)
-1ranklist is List(0, 0, 0, 4)
-1c = b + ( a * 5 )
-1adding0
-1List(0)
-1ranklist is List(0)
-1adding0
-1List(0, 0)
-1ranklist is List(0, 0)
-1adding0
-1List(0, 0, 0)
-1ranklist is List(0, 0, 0)
-1ranklist is List(0, 0, 0, 5)
-1adding0
-1List(0, 0, 0, 5, 0)
-1 ranklist is List(0, 0, 0, 5, 0)
-1adding0
-1List(0, 0, 0, 5, 0, 0)
-1#ranklist is List(0, 0, 0, 5, 0, 0)
-1&ranklist is List(0, 0, 0, 5, 0, 0, 4)
-1List(0, 0, 0, 5, 0, 0, 4)
-1running
-14
-1()
-1 ranklist is List(0, 0, 0, 5, 0)
-1@ ( a * b + c * b ) * 2 + d
-1adding0
-1List(0)
-1ranklist is List(0)
-1adding0
-1List(0, 0)
-1ranklist is List(0, 0)
-1adding0
-1List(0, 0, 0)
-1ranklist is List(0, 0, 0)
-1ranklist is List(0, 0, 0, 4)
-1adding0
-1List(0, 0, 0, 4, 0)
-1 ranklist is List(0, 0, 0, 4, 0)
-1#ranklist is List(0, 0, 0, 4, 0, 5)
-1adding0
-1List(0, 0, 0, 4, 0, 5, 0)
-1&ranklist is List(0, 0, 0, 4, 0, 5, 0)
-1)ranklist is List(0, 0, 0, 4, 0, 5, 0, 4)
-1adding0
-1 List(0, 0, 0, 4, 0, 5, 0, 4, 0)
-1,ranklist is List(0, 0, 0, 4, 0, 5, 0, 4, 0)
-1 List(0, 0, 0, 4, 0, 5, 0, 4, 0)
-1running
-1)ranklist is List(0, 0, 0, 4, 0, 5, 0, 4)
-1,ranklist is List(0, 0, 0, 4, 0, 5, 0, 4, 4)
-1/ranklist is List(0, 0, 0, 4, 0, 5, 0, 4, 4, 5)
-1adding0
-1&List(0, 0, 0, 4, 0, 5, 0, 4, 4, 5, 0)
-12ranklist is List(0, 0, 0, 4, 0, 5, 0, 4, 4, 5, 0)
-I You got 6/115 points!
+I You got 4/115 points!
 I "You do not pass assignment 4.1 yet

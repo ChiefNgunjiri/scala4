@@ -1,9 +1,8 @@
 products:
    /home/hmakimei/Desktop/git/scala4/repls-master/src/repls/IntREPL.scala -> /home/hmakimei/Desktop/git/scala4/repls-master/build/classes/scala/main/repls/Bodmas.class
+   /home/hmakimei/Desktop/git/scala4/repls-master/src/repls/IntREPL.scala -> /home/hmakimei/Desktop/git/scala4/repls-master/build/classes/scala/main/repls/CalcStack.class
    /home/hmakimei/Desktop/git/scala4/repls-master/src/repls/IntREPL.scala -> /home/hmakimei/Desktop/git/scala4/repls-master/build/classes/scala/main/repls/IntREPL.class
-   /home/hmakimei/Desktop/git/scala4/repls-master/src/repls/IntREPL.scala -> /home/hmakimei/Desktop/git/scala4/repls-master/build/classes/scala/main/repls/PostFix$.class
    /home/hmakimei/Desktop/git/scala4/repls-master/src/repls/IntREPL.scala -> /home/hmakimei/Desktop/git/scala4/repls-master/build/classes/scala/main/repls/PostFix.class
-   /home/hmakimei/Desktop/git/scala4/repls-master/src/repls/IntREPL.scala -> /home/hmakimei/Desktop/git/scala4/repls-master/build/classes/scala/main/repls/rankStack$.class
    /home/hmakimei/Desktop/git/scala4/repls-master/src/repls/IntREPL.scala -> /home/hmakimei/Desktop/git/scala4/repls-master/build/classes/scala/main/repls/rankStack.class
    /home/hmakimei/Desktop/git/scala4/repls-master/src/repls/MultiSet.scala -> /home/hmakimei/Desktop/git/scala4/repls-master/build/classes/scala/main/repls/MultiSet$.class
    /home/hmakimei/Desktop/git/scala4/repls-master/src/repls/MultiSet.scala -> /home/hmakimei/Desktop/git/scala4/repls-master/build/classes/scala/main/repls/MultiSet.class
@@ -43,11 +42,10 @@ source dependencies:
 external dependencies:
 class names:
    /home/hmakimei/Desktop/git/scala4/repls-master/src/repls/IntREPL.scala -> repls.Bodmas
+   /home/hmakimei/Desktop/git/scala4/repls-master/src/repls/IntREPL.scala -> repls.CalcStack
    /home/hmakimei/Desktop/git/scala4/repls-master/src/repls/IntREPL.scala -> repls.IntREPL
    /home/hmakimei/Desktop/git/scala4/repls-master/src/repls/IntREPL.scala -> repls.PostFix
-   /home/hmakimei/Desktop/git/scala4/repls-master/src/repls/IntREPL.scala -> repls.PostFix$
    /home/hmakimei/Desktop/git/scala4/repls-master/src/repls/IntREPL.scala -> repls.rankStack
-   /home/hmakimei/Desktop/git/scala4/repls-master/src/repls/IntREPL.scala -> repls.rankStack$
    /home/hmakimei/Desktop/git/scala4/repls-master/src/repls/MultiSet.scala -> repls.MultiSet
    /home/hmakimei/Desktop/git/scala4/repls-master/src/repls/MultiSet.scala -> repls.MultiSet$
    /home/hmakimei/Desktop/git/scala4/repls-master/src/repls/MultiSetREPL.scala -> repls.MultiSetREPL
