@@ -3,7 +3,7 @@ package repls
 import scala.collection.mutable.Stack
 
 class Bodmas(){
-    val ranking: Array[String] = Array[String]("","","^","/", "*", "+", "-")
+    val ranking: Array[String] = Array[String]("","","^","+", "-", "*", "/")
 }
 
 class CalcStack(stackCal: Stack[String]){
@@ -64,12 +64,12 @@ class IntREPL extends REPLBase {
 
         for(i <- 0 until inputArray.size) {
 
-            if (isDouble(inputArray(i))) postFixString = new PostFix(postFixString.getPostFix(), inputArray(i))
+            if (isDouble(inputArray(i)) || isChar(inputArray(i).charAt(0))) postFixString = new PostFix(postFixString.getPostFix(), inputArray(i))
 
             else{
                 val rank = bodmas(inputArray(i))
-
-                if (rank == 0 || rankStack.orderedList.size == 0) rankStack = new rankStack(rankStack.getRankList(), rank)
+                if (rank == 7) postFixString = new PostFix(postFixString.orderedList,"=")
+                else if (rank == 0 || rankStack.orderedList.size == 0) rankStack = new rankStack(rankStack.getRankList(), rank)
 
                 else if (rank == 1){
                     while(rankStack.getRankLast() != 0){
@@ -77,12 +77,23 @@ class IntREPL extends REPLBase {
                         rankStack = new rankStack(rankStack.getRankList().dropRight(1))
                     }
                     rankStack = new rankStack(rankStack.getRankList().dropRight(1))
+
+
                 }
 
-                else if(rank < rankStack.getRankLast()) postFixString = new PostFix(postFixString.getPostFix(), inputArray(i))
+                else if(rank < rankStack.getRankLast()){
+                    val tempval = rankStack.getRankLast()
+                    rankStack = new rankStack(rankStack.getRankList().dropRight(1),rank)
+                    rankStack = new rankStack(rankStack.getRankList(),tempval)
+                    //println (rankStack.orderedList)
+                }
 
                 else {
                     rankStack = new rankStack(rankStack.getRankList(),rank)
+                   // println("ok so " + rank + " < " + rankStack.getRankLast())
+                    //println (rankStack.orderedList)
+
+
                 }
             }
         }
@@ -92,46 +103,30 @@ class IntREPL extends REPLBase {
             postFixString =  new PostFix(postFixString.getPostFix(),bodmasList.ranking(rankStack.getRankLast()))
             rankStack = new rankStack(rankStack.getRankList().dropRight(1))
         }
+        println("lllpolish---> " + postFixString.orderedList)
         return postFixString.getPostFix()
     }
 
-    def polishCalc(polishList: List[String]): String ={
+    def polishCalc(polishList: List[String]): String = {
+        val newStack = new Stack[Int]()
 
-        var polishStack = new CalcStack(listToStack(polishList))
-        var finalString =""
-        println(polishStack.orderedStack)
-
-        while(polishStack.orderedStack.size != 0){
-
-            val popVal1 = polishStack.orderedStack.pop()
-            polishStack = new CalcStack(polishStack.orderedStack.dropRight(1))
-            if (!polishStack.orderedStack.isEmpty){
-                val popVal2 = polishStack.orderedStack.pop()
-                polishStack = new CalcStack(polishStack.orderedStack.dropRight(1))
-                if (!polishStack.orderedStack.isEmpty) {
-
-                    val popVal3 = polishStack.orderedStack.pop()
-                    polishStack = new CalcStack(polishStack.orderedStack.dropRight(1))
-
-                    if(bodmas(popVal3) != 10){
-                        println("enterning calulation")
-                        println("solution" + operations(popVal3, popVal1, popVal1))
-                        polishStack = new CalcStack(polishStack.orderedStack, operations(popVal3, popVal1, popVal1))
-                    }
-
-                }
-                else {
-                    println("second level")
-                    finalString += (popVal1 + " " + popVal2)
-                }
-                }
-            else finalString += popVal1
-
-            println(finalString)
-
+        for (polishList <- polishList; if polishList.nonEmpty) polishList match {
+            
+            case "+" => {newStack.push(newStack.pop() + newStack.pop())
+            println("result" + newStack.last)}
+            case "-" =>{val pop1 =  newStack.pop()
+                newStack.push(newStack.pop() - pop1)}
+            case "/" => {val pop1 =  newStack.pop()
+                newStack.push(newStack.pop() / pop1)}
+            case "*" => newStack.push(newStack.pop() * newStack.pop())
+            case x => newStack.push(x.toInt)
         }
+            newStack.pop().toString
+    }
 
-        return polishStack.orderedStack.mkString(" ")
+    def isChar(num: Char):Boolean ={
+        if (num.isLetter) return true
+        else false
     }
 
     def isDouble(num: String): Boolean ={
@@ -144,10 +139,11 @@ class IntREPL extends REPLBase {
             case "(" => 0
             case ")" => 1
             case "^" => 2
-            case "/" => 3
-            case "*" => 4
-            case "+" => 5
-            case "-" => 6
+            case "+" => 3
+            case "-" => 4
+            case "*" => 5
+            case "/" => 6
+            case "=" => 7
             case _ => 10
         }
     }
@@ -178,3 +174,5 @@ class IntREPL extends REPLBase {
 
     // TODO: Implement any further functions that are specifically for an IntREPL
 }
+
+//
